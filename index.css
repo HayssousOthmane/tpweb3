@@ -4,6 +4,11 @@ body{
     height: 100vh;
 }
 
+h1{
+    text-align: center;
+    color: rgb(47, 138, 53);
+}
+
 .form{
     display: flex;
     flex-direction: column;
@@ -12,5 +17,12 @@ body{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    gap: 50px;
+    gap: 30px;
+}
+
+.form input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
