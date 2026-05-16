@@ -10,9 +10,21 @@ console.log(password);
 
 submit.addEventListener("click", function(event){
 
-    if (nom.value === "" || email.value === "" || password.value === "") {
-        alert("Please fill in all fields.");
+    
+    if (nom.value.trim() === "") {
+        alert("Please enter your name.");
         return;
+    }
+    else if (!email.value.includes("@")) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+    else if (password.value.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return;
+    }
+    
+    else {         alert("Form submitted successfully!");
     }
     event.preventDefault();
     console.log("Button clicked");
