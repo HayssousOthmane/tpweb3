@@ -42,3 +42,4 @@ submit.addEventListener("click", function(event) {
 
     alert("Form submitted successfully!\n\nName: " + nom.value + "\nEmail: " + email.value + "\nPassword: " + password.value);
 });
+
